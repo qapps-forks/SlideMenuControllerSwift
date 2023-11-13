@@ -21,7 +21,7 @@ let package = Package(
         .target(
             name: "SlideMenuControllerSwift",
             dependencies: [],
-            path: "SlideMenuControllerSwift"),
+            path: "Source"),
         .testTarget(
             name: "SlideMenuControllerSwiftTests",
             dependencies: ["SlideMenuControllerSwift"],
