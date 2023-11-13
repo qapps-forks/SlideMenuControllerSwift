@@ -4,6 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "SlideMenuControllerSwift",
+    defaultLocalization: "en", // Add this line with the appropriate default language
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
@@ -19,11 +20,11 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "SlideMenuControllerSwift",
-            path: "",
-            dependencies: []),
+            dependencies: [],
+            path: "SlideMenuControllerSwift"),
         .testTarget(
             name: "SlideMenuControllerSwiftTests",
-            path: "",
-            dependencies: ["SlideMenuControllerSwift"]),
+            dependencies: ["SlideMenuControllerSwift"],
+            path: "SlideMenuControllerSwiftTests"),
     ]
 )
